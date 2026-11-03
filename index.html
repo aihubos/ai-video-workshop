@@ -20,6 +20,9 @@ body{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFo
 h1{font-size:clamp(32px,8vw,48px);line-height:1.25;font-weight:800;letter-spacing:-.03em}
 h1 em{font-style:normal;color:var(--blue)}
 .lead{margin-top:16px;font-size:18px;color:var(--sub)}
+.pic{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:16px;background:#fcfbf7;object-fit:cover}
+.card .pic{margin-bottom:16px}
+.hero .pic{margin-top:32px;border-radius:24px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
 .chip{background:var(--blue-soft);color:var(--blue);font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px}
 section{padding:48px 0 0}
@@ -68,6 +71,7 @@ footer{padding:0 0 56px;text-align:center;color:var(--sub);font-size:14px}
 <h1>3시간 만에,<br><em>내 영상 1편.</em></h1>
 <p class="lead">코딩도 편집도 몰라도 괜찮아요.<br>내 캐릭터가 나오는 30초 세로 영상을 직접 만들어요.</p>
 <div class="chips"><span class="chip">9:16</span><span class="chip">30초</span><span class="chip">5장면</span><span class="chip">MP4 1편</span></div>
+<img class="pic" src="assets/hero.webp" width="1280" height="720" alt="아늑한 작은 스튜디오에서 초보자 세 명이 노트북으로 작업하고, 멘토가 옆에서 안내하는 일러스트. 앞쪽 휴대폰에는 수달 캐릭터의 세로 영상이 재생되고 있다." fetchpriority="high">
 </div>
 </header>
 
@@ -85,10 +89,10 @@ footer{padding:0 0 56px;text-align:center;color:var(--sub);font-size:14px}
 
 <section id="plan"><div class="wrap">
 <h2>3시간, 4교시</h2>
-<div class="card"><div class="time">1교시 · 0–55분</div><h3>정하기</h3><p>내 이야기와 캐릭터를 정해요. 발견 → 접근 → 문제 → 반전 → 해결, 5장면으로.</p><div class="result">장면표 + 캐릭터 기준 이미지 1장</div></div>
-<div class="card"><div class="time">2교시 · 55–100분</div><h3>이미지</h3><p>같은 캐릭터로 장면 이미지 5장을 만들어요. 어색하면 AI에게 고치라고 시켜요.</p><div class="result">장면 이미지 5장</div></div>
-<div class="card"><div class="time">3교시 · 100–135분</div><h3>영상</h3><p>멘토가 한 장면을 먼저 보여드려요. 그다음 각자 장면마다 움직임을 입혀요.</p><div class="result">영상 클립 4~5개</div></div>
-<div class="card"><div class="time">4교시 · 135–180분</div><h3>편집 · 확인</h3><p>이어 붙이고 음악을 넣어요. 내 휴대폰에서 재생해 보고, 서로 한 편씩 같이 봐요.</p><div class="result">완성 MP4 1편 + 다시 만드는 순서 메모</div></div>
+<div class="card"><img class="pic" src="assets/storyboard.webp" width="1280" height="720" alt="발견, 접근, 문제, 반전, 해결 다섯 칸으로 그린 스토리보드. 청록색 아기 수달이 반짝이는 씨앗을 발견하고 꽃에 물을 주기까지의 이야기." loading="lazy" decoding="async"><div class="time">1교시 · 0–55분</div><h3>정하기</h3><p>내 이야기와 캐릭터를 정해요. 발견 → 접근 → 문제 → 반전 → 해결, 5장면으로.</p><div class="result">장면표 + 캐릭터 기준 이미지 1장</div></div>
+<div class="card"><img class="pic" src="assets/scenes.webp" width="1280" height="720" alt="같은 수달 캐릭터가 다섯 장면에서 모두 같은 얼굴과 노란 배낭으로 등장하는 장면 이미지 다섯 장." loading="lazy" decoding="async"><div class="time">2교시 · 55–100분</div><h3>이미지</h3><p>같은 캐릭터로 장면 이미지 5장을 만들어요. 어색하면 AI에게 고치라고 시켜요.</p><div class="result">장면 이미지 5장</div></div>
+<div class="card"><img class="pic" src="assets/clips.webp" width="1280" height="720" alt="정지 이미지 여러 장이 필름 스트립과 재생 버튼을 거쳐 영상 클립으로 바뀌는 모습을 그린 그림." loading="lazy" decoding="async"><div class="time">3교시 · 100–135분</div><h3>영상</h3><p>멘토가 한 장면을 먼저 보여드려요. 그다음 각자 장면마다 움직임을 입혀요.</p><div class="result">영상 클립 4~5개</div></div>
+<div class="card"><img class="pic" src="assets/edit.webp" width="1280" height="720" alt="노트북 화면의 타임라인에서 클립을 이어 붙이고, 옆 휴대폰에서 완성된 세로 영상을 재생해 확인하는 그림." loading="lazy" decoding="async"><div class="time">4교시 · 135–180분</div><h3>편집 · 확인</h3><p>이어 붙이고 음악을 넣어요. 내 휴대폰에서 재생해 보고, 서로 한 편씩 같이 봐요.</p><div class="result">완성 MP4 1편 + 다시 만드는 순서 메모</div></div>
 </div></section>
 
 <section id="prep"><div class="wrap">
